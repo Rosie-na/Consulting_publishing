@@ -87,7 +87,7 @@ button:focus {
     transition-duration: 0.4s;
     transition: all 0.4s;
 }
-.btn-print {
+.btn-print, .btn-pdf {
     background-color: #1D9ADD;
     color: var(--white);
     padding: 0px 12px;
@@ -101,7 +101,12 @@ button:focus {
     vertical-align: middle;
     margin-right: 5px;
 }
-.btn-print:hover {
+.btn-pdf::before {
+    content: url("../images/icon/document.svg");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.btn-pdf:hover, .btn-print:hover {
     background-color: var(--blue-400)
 }
 .btn-gray {
