@@ -21,15 +21,15 @@
                     <a href="#" class="logo">피그플랜 컨설팅 진단서</a>
                     <div class="menu-area">
                         <ul>
-                            <li><a href="#report-1p">기본정보</a></li>
-                            <li><a href="#report-3p">생산성 진단</a></li>
-                            <li><a href="#report-6p">생산 품질 진단</a></li>
-                            <li><a href="#report-7p">총평</a></li>
+                            <li><a href="#report-1p">기본 정보</a></li>
+                            <li><a href="#report-2p">생산성 기초 정보</a></li>
+                            <li><a href="#report-4p">생산성 진단</a></li>
+                            <li><a href="#report-7p">출하 성적 진단</a></li>
+                            <li><a href="#report-9p">총평</a></li>
                         </ul>
                     </div>
                     <div class="btns-area">
                         <ul class="btns">
-                            <li><button type="button" class="btn-print">인쇄하기</button></li>
                             <li><button type="button" class="btn-pdf">PDF 다운로드</button></li>
                             <li><button type="button" class="btn-gray">피그플랜 바로가기</button></li>
                         </ul>
@@ -39,14 +39,39 @@
             <!-- 상단 네비게이션 메뉴 영역 끝 -->
 
             
-            <!-- 1페이지 시작 -->
-            <div class="report-wrapper" id="report-1p">
+            
+            <!-- 표지 시작 -->
+            <div class="report-wrapper cover">
                 <div class="inner">
+                    <div>
+                        <div class="cover-tit">피그플랜 컨설팅 진단서</div>
+                        <p class="ver-tag mT30">Standard Version</p>
+                        <hr class="mT60"/>
+                        <div class="info-area">
+                            <div class="info">
+                                <p class="bold mR10">농장명</p>
+                                <p>용암축산</p>
+                            </div>
+                            <div class="info">
+                                <p class="bold mR10">발행일</p>
+                                <p>2024년 5월 30일</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="logo" src="images/logo_pigplan2.svg">
+                </div>
+            </div>
+            <!-- 표지 끝 -->
+
+
+            
+            <!-- 1페이지(1.기본 정보) 시작 -->
+            <div class="report-wrapper">
+                <div class="inner" id="report-1p">
                     <div class="container">
                         <div class="header">
                             <div class="main-tit-area">
-                                <h1>피그플랜 농장 진단 서비스</h1>
-                                <p class="ver-tag">Standard Version</p>
+                                <h2>01 기본 정보</h2>
                             </div>
                             <img src="images/logo_pigplan.svg">
                         </div>
@@ -99,14 +124,14 @@
                         </div>
                         <!-- 기본 정보 끝 -->
 
-                        <!-- 농장 현황 시작 -->
+                        <!-- 농장 사육 및 시설 현황 시작 -->
                         <div class="content">
                             <div class="tit-area">
                                 <div>
-                                    <h3>농장 현황</h3>
+                                    <h3>농장 사육 및 시설 현황</h3>
                                 </div>
                                 <div>
-                                    <p class="caption">*월간 통계 2024년 05월</p>
+                                    <p class="caption">*월간 통계 2024년 10월</p>
                                 </div>
                             </div>
                             <div class="table-area">
@@ -142,7 +167,7 @@
                                             <td class="tit-fst" rowspan="3">번식성적</td>
                                             <td class="tit">PSY</td>
                                             <td class="right">27.4두</td>
-                                            <td class="tit">LSY</td>
+                                            <td class="tit">모돈회전율</td>
                                             <td class="right">2.4회</td>
                                             <td class="tit">MSY</td>
                                             <td class="right">27.8두</td>
@@ -163,20 +188,23 @@
                                             <td class="tit">7일 내 재귀율</td>
                                             <td class="right">94%</td>
                                         </tr>
-                                        <tr>
-                                            <td class="tit-fst" rowspan="2">출하성적</td>
-                                            <td class="tit">평균 출하체중</td>
-                                            <td class="right">113.8kg</td>
-                                            <td class="tit">평균 도체중</td>
-                                            <td class="right">88.3kg</td>
+                                        <tr class="line-bot">
+                                            <td class="tit-fst">출하성적</td>
+                                            <td class="tit" style="font-size: 13px;">평균 도체중(출하체중)</td>
+                                            <td class="right">88.4(115.6)kg</td>
                                             <td class="tit">등지방 두께</td>
-                                            <td class="right">19.4mm</td>
+                                            <td class="right">22mm</td>
+                                            <td class="tit">1등급 이상 출현율</td>
+                                            <td class="right">75.0%</td>
                                         </tr>
                                         <tr class="line-bot">
-                                            <td class="tit">출하 등급 비율</td>
-                                            <td colspan="3">1+등급(34%) 1등급(40.4%) 2등급(25%)</td>
-                                            <td class="tit">1등급 출현율</td>
-                                            <td class="right">75%</td>
+                                            <td class="tit-fst">사료성적</td>
+                                            <td class="tit">사료 키로당 단가</td>
+                                            <td class="right">0</td>
+                                            <td class="tit">FCR</td>
+                                            <td class="right">3.5</td>
+                                            <td class="tit">출하두당 사료비</td>
+                                            <td class="right">0</td>
                                         </tr>
                                         <tr>
                                             <td class="tit-fst">기타</td>
@@ -191,14 +219,12 @@
                                 </table>
                             </div>                            
                         </div>
-                        <!-- 농장 현황 끝 -->
                         
                         <div class="row-content">
                             <!-- 시설 현황 시작 -->
                             <div class="content">
                                 <div class="tit-area">
                                     <div>
-                                        <h3>시설 현황</h3>
                                     </div>
                                 </div>
                                 <div class="table-area">
@@ -250,7 +276,6 @@
                             <div class="content">
                                 <div class="tit-area">
                                     <div>
-                                        <h3>ICT 장비 현황</h3>
                                     </div>
                                 </div>
                                 <div class="table-area">
@@ -298,9 +323,33 @@
                             </div>
                             <!-- ICT 장비 현황 끝 -->
                         </div>
+                        <!-- 농장 사육 및 시설 현황 끝 -->
 
-                         <!-- 모돈군 산차 구성 시작 -->
-                         <div class="content">
+                    </div>
+                    
+                    <div class="footer">
+                        <p>copyright ⓒ wiselake. All rights reserved.</p>
+                        <p>1p</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 1페이지(1.기본 정보) 끝 -->
+
+
+
+            <!-- 2페이지(2.생산성 기초 정보) 시작 -->
+            <div class="report-wrapper">
+                <div class="inner" id="report-2p">
+                    <div class="container">
+                        <div class="header">
+                            <div class="main-tit-area">
+                                <h2>02 생산성 기초 정보</h2>
+                            </div>
+                            <img src="images/logo_pigplan.svg">
+                        </div>
+
+                        <!-- 모돈군 산차 구성 시작 -->
+                        <div class="content">
                             <div class="tit-area">
                                 <div>
                                     <h3>모돈군 산차 구성</h3>
@@ -313,20 +362,18 @@
                                 <table class="ratio-table">
                                     <colgroup>
                                         <!-- 산차 비율에 맞게 조절 필요 -->
-                                        <col style="width:14%;" />
-                                        <col style="width:18%;" />
-                                        <col style="width:19%;" />
-                                        <col style="width:9%;" />
-                                        <col style="width:5%;" />
-                                        <col style="width:6%;" />
+                                        <col style="width:13%;" />
+                                        <col style="width:12%;" />
                                         <col style="width:10%;" />
+                                        <col style="width:6%;" />
+                                        <col style="width:7%;" />
                                         <col style="width:7%;" />
                                         <col style="width:5%;" />
+                                        <col style="width:4%;" />
                                         <col style="width:4%;" />
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <td class="num-01"><div>후보돈<br>(14%)</div></td>
                                             <td class="num-01"><div>0산차<br>(18.2%)</div></td>
                                             <td class="num-01"><div>1산차<br>(19%)</div></td>
                                             <td class="num-02"><div>2산차<br>(9%)</div></td>
@@ -338,7 +385,7 @@
                                             <td class="num-08"><div>8+<br>(4.8%)</div></td>
                                         </tr>
                                         <tr class="tag-area">
-                                            <td colspan="3"></td>
+                                            <td colspan="2"></td>
                                             <td class="tag" colspan="3">
                                                 <div>
                                                     <hr />
@@ -413,30 +460,6 @@
                             </div>
                             <!-- PSY 연도별 추이 끝 -->
                         </div>
-                    </div>
-                    
-                    <div class="footer">
-                        <p>copyright ⓒ wiselake. All rights reserved.</p>
-                        <p>1p</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 1페이지 끝 -->
-
-
-
-            <!-- 2페이지 시작 -->
-            <div class="report-wrapper">
-                <div class="inner">
-                    <div class="container">
-                        <div class="header">
-                            <div class="main-tit-area">
-                                <h1>피그플랜 농장 진단 서비스</h1>
-                                <p class="ver-tag">Standard Version</p>
-                            </div>
-                            <img src="images/logo_pigplan.svg">
-                        </div>
-
                         
                         <!-- 주요 지표별 평균 비교 시작 -->
                         <div class="content">
@@ -448,11 +471,11 @@
                                 <!-- 범례 -->
                                 <div class="caption-list">
                                     <div class="list">
-                                        <div class="circle blue"></div>
+                                        <div class="circle skyblue"></div>
                                         <p class="caption">내 농장</p>
                                     </div>
                                     <div class="list">
-                                        <div class="circle yellow"></div>
+                                        <div class="circle navy"></div>
                                         <p class="caption">피그플랜</p>
                                     </div>
                                     <div class="list">
@@ -484,14 +507,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:99%;"></div>
+                                                            <div class="bar skyblue" style="width:99%;"></div>
                                                         </div>
                                                         <p>14.1두</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:96%;"></div>
+                                                            <div class="bar navy" style="width:96%;"></div>
                                                         </div>
                                                         <p>13.4두</p>
                                                     </div>
@@ -523,14 +546,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:99%;"></div>
+                                                            <div class="bar skyblue" style="width:99%;"></div>
                                                         </div>
                                                         <p>12.5두</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:96%;"></div>
+                                                            <div class="bar navy" style="width:96%;"></div>
                                                         </div>
                                                         <p>12.2두</p>
                                                     </div>
@@ -562,14 +585,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:99%;"></div>
+                                                            <div class="bar skyblue" style="width:99%;"></div>
                                                         </div>
                                                         <p>11.6두</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:96%;"></div>
+                                                            <div class="bar navy" style="width:96%;"></div>
                                                         </div>
                                                         <p>10.7두</p>
                                                     </div>
@@ -601,14 +624,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:91%;"></div>
+                                                            <div class="bar skyblue" style="width:91%;"></div>
                                                         </div>
                                                         <p>81.2%</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:92%;"></div>
+                                                            <div class="bar navy" style="width:92%;"></div>
                                                         </div>
                                                         <p>81.6%</p>
                                                     </div>
@@ -640,14 +663,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:95%;"></div>
+                                                            <div class="bar skyblue" style="width:95%;"></div>
                                                         </div>
                                                         <p>95.5%</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:87%;"></div>
+                                                            <div class="bar navy" style="width:87%;"></div>
                                                         </div>
                                                         <p>87.6%</p>
                                                     </div>
@@ -679,14 +702,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:95%;"></div>
+                                                            <div class="bar skyblue" style="width:95%;"></div>
                                                         </div>
                                                         <p>2.37회전</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:93%;"></div>
+                                                            <div class="bar navy" style="width:93%;"></div>
                                                         </div>
                                                         <p>2.3회전</p>
                                                     </div>
@@ -718,14 +741,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:90%;"></div>
+                                                            <div class="bar skyblue" style="width:90%;"></div>
                                                         </div>
                                                         <p>5일</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:93%;"></div>
+                                                            <div class="bar navy" style="width:93%;"></div>
                                                         </div>
                                                         <p>7.1일</p>
                                                     </div>
@@ -757,14 +780,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:91%;"></div>
+                                                            <div class="bar skyblue" style="width:91%;"></div>
                                                         </div>
                                                         <p>37.7일</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:94%;"></div>
+                                                            <div class="bar navy" style="width:94%;"></div>
                                                         </div>
                                                         <p>45.8일</p>
                                                     </div>
@@ -796,14 +819,14 @@
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 내 농장 -->
-                                                            <div class="bar blue" style="width:90%;"></div>
+                                                            <div class="bar skyblue" style="width:90%;"></div>
                                                         </div>
                                                         <p>36일</p>
                                                     </div>
                                                     <div class="itm">
                                                         <div class="bar-chart">
                                                             <!-- 막대 그래프 / 피그플랜 -->
-                                                            <div class="bar yellow" style="width:94%;"></div>
+                                                            <div class="bar navy" style="width:94%;"></div>
                                                         </div>
                                                         <p>45일</p>
                                                     </div>
@@ -829,9 +852,33 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>                            
+                            </div>
+                            <p class="caption mT10">*상시모돈수 동일규모 기준</p>                
                         </div>
                         <!-- 주요 지표별 평균 비교  끝 -->
+                        
+                    </div>
+                    
+                    <div class="footer" id="report-3p">
+                        <p>copyright ⓒ wiselake. All rights reserved.</p>
+                        <p>2p</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2페이지(2.생산성 기초 정보) 끝 -->
+
+
+
+            <!-- 3페이지(2.생산성 기초 정보) 시작 -->
+            <div class="report-wrapper">
+                <div class="inner" id="report-3p">
+                    <div class="container">
+                        <div class="header">
+                            <div class="main-tit-area">
+                                <h2>02 생산성 기초 정보</h2>
+                            </div>
+                            <img src="images/logo_pigplan.svg">
+                        </div>
 
                         <!-- 출하 두수 예측 시작 -->
                         <div class="content">
@@ -950,13 +997,13 @@
                                             </tr>
                                             <tr class="line-bot">
                                                 <td class="tit-fst">총 출하두수</td>
-                                                <td colspan="2">7,248두</td>
+                                                <td class="bold" colspan="2">7,248두</td>
                                                 <td class="tit-fst">총 출하금액</td>
-                                                <td colspan="2">3,268,209천원</td>
+                                                <td class="bold" colspan="2">3,268,209천원</td>
                                                 <td class="tit-fst">총 생산비</td>
-                                                <td colspan="2">3,004,160천원</td>
+                                                <td class="bold" colspan="2">3,004,160천원</td>
                                                 <td class="tit-fst" colspan="2">향후 1년 예상 순 이익</td>
-                                                <td colspan="2">264,049천원</td>
+                                                <td class="bold" colspan="2">264,049천원</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1036,13 +1083,13 @@
                                             </tr>
                                             <tr class="line-bot">
                                                 <td class="tit-fst">총 출하두수</td>
-                                                <td colspan="2">7,248두</td>
+                                                <td class="bold" colspan="2">7,248두</td>
                                                 <td class="tit-fst">총 출하금액</td>
-                                                <td colspan="2">3,268,209천원</td>
+                                                <td class="bold" colspan="2">3,268,209천원</td>
                                                 <td class="tit-fst">총 생산비</td>
-                                                <td colspan="2">3,004,160천원</td>
+                                                <td class="bold" colspan="2">3,004,160천원</td>
                                                 <td class="tit-fst" colspan="2">향후 1년 예상 순 이익</td>
-                                                <td colspan="2">264,049천원</td>
+                                                <td class="bold" colspan="2">264,049천원</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1054,23 +1101,23 @@
                         
                     </div>
                     
-                    <div class="footer" id="report-3p">
+                    <div class="footer">
                         <p>copyright ⓒ wiselake. All rights reserved.</p>
-                        <p>2p</p>
+                        <p>3p</p>
                     </div>
                 </div>
             </div>
-            <!-- 2페이지 끝 -->
+            <!-- 3페이지(2.생산성 기초 정보) 끝 -->
 
 
 
-            <!-- 3페이지 시작 -->
+            <!-- 4페이지(3.생산성 진단) 시작 -->
             <div class="report-wrapper">
-                <div class="inner">
+                <div class="inner" id="report-4p">
                     <div class="container">
                         <div class="header">
                             <div class="main-tit-area">
-                                <h2>01 생산성 진단</h2>
+                                <h2>03 생산성 진단</h2>
                             </div>
                             <img src="images/logo_pigplan.svg">
                         </div>
@@ -1188,20 +1235,18 @@
                                     <table class="ratio-table-03">
                                         <colgroup>
                                             <!-- 산차 비율에 맞게 조절 필요 -->
+                                            <col style="width:20%;" />
+                                            <col style="width:16%;" />
+                                            <col style="width:15%;" />
                                             <col style="width:14%;" />
-                                            <col style="width:18%;" />
-                                            <col style="width:19%;" />
-                                            <col style="width:9%;" />
-                                            <col style="width:5%;" />
-                                            <col style="width:6%;" />
+                                            <col style="width:14%;" />
+                                            <col style="width:13%;" />
                                             <col style="width:10%;" />
-                                            <col style="width:7%;" />
-                                            <col style="width:5%;" />
+                                            <col style="width:8%;" />
                                             <col style="width:4%;" />
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                                <td class="num-01"><div>후보돈<br>(14%)<br><span class="sub-text">50두</span></div></td>
                                                 <td class="num-01"><div>0산차<br>(18.2%)<br><span class="sub-text">65두</span></div></td>
                                                 <td class="num-01"><div>1산차<br>(19%)<br><span class="sub-text">68두</span></div></td>
                                                 <td class="num-02"><div>2산차<br>(9%)<br><span class="sub-text">32두</span></div></td>
@@ -1213,7 +1258,7 @@
                                                 <td class="num-08"><div>8+<br>(4.8%)<br><span class="sub-text">17두</span></div></td>
                                             </tr>
                                             <tr class="tag-area">
-                                                <td colspan="3"></td>
+                                                <td colspan="2"></td>
                                                 <td class="tag" colspan="3">
                                                     <div>
                                                         <hr />
@@ -1245,7 +1290,7 @@
                                 <!-- 산차별 분만 성적 끝 -->
 
                                 <!-- 주요 모돈 도태 원인 시작 -->
-                                <div style="width: 500px;">
+                                <div style="width: 520px;">
                                     <h4 class="mB6">주요 모돈 도태 원인</h4>
                                     <div class="row-content">
                                         <div class="table-area">
@@ -1302,7 +1347,7 @@
                                                 </tbody>
                                             </table>
                                         </div>    
-                                        <div class="list-area-01">
+                                        <div class="list-area-01" style="width: 180px;">
                                             <div class="list">
                                                 <div>
                                                     <h5>평균 모돈 산차</h5>
@@ -1356,11 +1401,11 @@
                                             <!-- 범례 -->
                                             <div class="caption-list mB8">
                                                 <div class="list">
-                                                    <div class="circle blue"></div>
+                                                    <div class="circle skyblue"></div>
                                                     <p class="caption">내 농장</p>
                                                 </div>
                                                 <div class="list">
-                                                    <div class="circle yellow"></div>
+                                                    <div class="circle navy"></div>
                                                     <p class="caption">피그플랜</p>
                                                 </div>
                                                 <div class="list">
@@ -1386,14 +1431,14 @@
                                                                 <div class="itm">
                                                                     <div class="bar-chart">
                                                                         <!-- 막대 그래프 / 내 농장 -->
-                                                                        <div class="bar blue" style="width:100%;"></div>
+                                                                        <div class="bar skyblue" style="width:100%;"></div>
                                                                     </div>
                                                                     <p>14.4두</p>
                                                                 </div>
                                                                 <div class="itm">
                                                                     <div class="bar-chart">
                                                                         <!-- 막대 그래프 / 피그플랜 -->
-                                                                        <div class="bar yellow" style="width:96%;"></div>
+                                                                        <div class="bar navy" style="width:96%;"></div>
                                                                     </div>
                                                                     <p>13.4두</p>
                                                                 </div>
@@ -1424,14 +1469,14 @@
                                                                 <div class="itm">
                                                                     <div class="bar-chart">
                                                                         <!-- 막대 그래프 / 내 농장 -->
-                                                                        <div class="bar blue" style="width:99%;"></div>
+                                                                        <div class="bar skyblue" style="width:99%;"></div>
                                                                     </div>
                                                                     <p>12.8두</p>
                                                                 </div>
                                                                 <div class="itm">
                                                                     <div class="bar-chart">
                                                                         <!-- 막대 그래프 / 피그플랜 -->
-                                                                        <div class="bar yellow" style="width:96%;"></div>
+                                                                        <div class="bar navy" style="width:96%;"></div>
                                                                     </div>
                                                                     <p>12.2두</p>
                                                                 </div>
@@ -1462,14 +1507,14 @@
                                                                 <div class="itm">
                                                                     <div class="bar-chart">
                                                                         <!-- 막대 그래프 / 내 농장 -->
-                                                                        <div class="bar blue" style="width:99%;"></div>
+                                                                        <div class="bar skyblue" style="width:99%;"></div>
                                                                     </div>
                                                                     <p>11.5두</p>
                                                                 </div>
                                                                 <div class="itm">
                                                                     <div class="bar-chart">
                                                                         <!-- 막대 그래프 / 피그플랜 -->
-                                                                        <div class="bar yellow" style="width:96%;"></div>
+                                                                        <div class="bar navy" style="width:96%;"></div>
                                                                     </div>
                                                                     <p>10.7두</p>
                                                                 </div>
@@ -1529,21 +1574,21 @@
                     
                     <div class="footer">
                         <p>copyright ⓒ wiselake. All rights reserved.</p>
-                        <p>3p</p>
+                        <p>4p</p>
                     </div>
                 </div>
             </div>
-            <!-- 3페이지 끝 -->
+            <!-- 4페이지(생산성 진단) 끝 -->
 
 
 
-            <!-- 4페이지 시작 -->
+            <!-- 5페이지(3.생산성 진단) 시작 -->
             <div class="report-wrapper">
-                <div class="inner">
+                <div class="inner" id="report-5p">
                     <div class="container">
                         <div class="header">
                             <div class="main-tit-area">
-                                <h2>01 생산성 진단</h2>
+                                <h2>03 생산성 진단</h2>
                             </div>
                             <img src="images/logo_pigplan.svg">
                         </div>
@@ -1564,11 +1609,13 @@
                                         <tr>
                                             <td class="tit">손실 구간</td>
                                             <td class="tit">손실 두수</td>
+                                            <td class="tit">평균 손실 두수</td>
                                             <td class="tit">사고율</td>
                                             <td class="tit">피그플랜 평균 사고율</td>
                                         </tr>
                                         <tr>
                                             <td class="tit">생시 사고(총산-실산)</td>
+                                            <td>1,038두</td>
                                             <td>1,038두</td>
                                             <td>11%</td>
                                             <td>9%</td>
@@ -1576,11 +1623,13 @@
                                         <tr>
                                             <td class="tit">포유 중 사고(실산-이유)</td>
                                             <td>653두</td>
+                                            <td>653두</td>
                                             <td>8.5%</td>
                                             <td>11.8%</td>
                                         </tr>
                                         <tr>
                                             <td class="tit">이유 후 사고(이유-출하)</td>
+                                            <td>0두</td>
                                             <td>0두</td>
                                             <td>0%</td>
                                             <td>-</td>
@@ -1828,12 +1877,14 @@
                                                     <td class="red">0</td>
                                                     <td class="red">2</td>
                                                 </tr>
+                                                <tr class="summary-row">
+                                                    <td class="tit bold">합계</td>
+                                                    <td class="tit bold" colspan="19">재발정 체크 합계: 18두 
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        임신 진단기 합계: 1두</td>
+                                                </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                    <div>
-                                        <p class="sum-text-01">재발정 체크<br>합계 : 51두</p>
-                                        <p class="sum-text-02">임신 진단기<br>합계 : 19두</p>
                                     </div>
                                 </div>
                                 <div style="width: 260px;">
@@ -1847,7 +1898,7 @@
                                                     <td class="tit">임신 진단 방법</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text" style="height: 243px;">
+                                                    <td class="text" style="height: 271px;">
                                                         교배 후 재발정 여부에 따라 임신여부를 판정하게 됩니다.
                                                         돼지의 발정 주기는 21일이므로 교배 후 3주 째에 발정이 확인되지 않으면 임신으로 추정합니다.
                                                         임신진단기를 사용한 체크는 보통 임신 25일 전후에 실시하며,
@@ -1935,21 +1986,21 @@
                     
                     <div class="footer">
                         <p>copyright ⓒ wiselake. All rights reserved.</p>
-                        <p>4p</p>
+                        <p>5p</p>
                     </div>
                 </div>
             </div>
-            <!-- 4페이지 끝 -->
+            <!-- 5페이지(3.생산성 진단) 끝 -->
 
 
 
-            <!-- 5페이지 시작 -->
+            <!-- 6페이지(3.생산성 진단) 시작 -->
             <div class="report-wrapper">
-                <div class="inner">
+                <div class="inner" id="report-6p">
                     <div class="container">
                         <div class="header">
                             <div class="main-tit-area">
-                                <h2>01 생산성 진단</h2>
+                                <h2>03 생산성 진단</h2>
                             </div>
                             <img src="images/logo_pigplan.svg">
                         </div>
@@ -2152,21 +2203,21 @@
                     
                     <div class="footer" id="report-6p">
                         <p>copyright ⓒ wiselake. All rights reserved.</p>
-                        <p>5p</p>
+                        <p>6p</p>
                     </div>
                 </div>
             </div>
-            <!-- 5페이지 끝 -->
+            <!-- 6페이지(3.생산성 진단) 끝 -->
 
 
 
-            <!-- 6페이지 시작 -->
+            <!-- 7페이지(4.출하 성적 진단) 시작 -->
             <div class="report-wrapper">
-                <div class="inner">
+                <div class="inner" id="report-7p">
                     <div class="container">
                         <div class="header">
                             <div class="main-tit-area">
-                                <h2>02 생산 품질 진단</h2>
+                                <h2>04 출하 성적 진단</h2>
                             </div>
                             <img src="images/logo_pigplan.svg">
                         </div>
@@ -2189,8 +2240,46 @@
                                      <!-- 차트 영역 (차트 넣으면 위 div의 style 지워주세요. 감사합니다.)-->
                                 </div>        
                             </div>
+                            
+                        </div>
+                        <!-- 출하 품질 진단 끝 -->
+                        
+                    </div>
+                    
+                    <div class="footer" id="report-7p">
+                        <p>copyright ⓒ wiselake. All rights reserved.</p>
+                        <p>7p</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 7페이지(4.출하 성적 진단) 끝 -->
 
-                            <div class="row-content mT16">
+
+
+            <!-- 8페이지(4.출하 성적 진단) 시작 -->
+            <div class="report-wrapper">
+                <div class="inner" id="report-8p">
+                    <div class="container">
+                        <div class="header">
+                            <div class="main-tit-area">
+                                <h2>04 출하 성적 진단</h2>
+                            </div>
+                            <img src="images/logo_pigplan.svg">
+                        </div>
+
+                        
+                        <!-- 출하 품질 진단 시작 -->
+                        <div class="content">
+                            <div class="tit-area">
+                                <div>
+                                    <h3>출하 품질 진단</h3>
+                                </div>
+                                <div>
+                                    <p class="caption">*최근 1년간 통계</p>
+                                </div>
+                            </div>
+
+                            <div class="row-content mT10">
                                 <div style="width: 500px;">
                                     <h4 class="mB6">출하체중</h4>
                                     <table class="basic-table">
@@ -2260,7 +2349,7 @@
                                                 <td class="tag" colspan="2">
                                                     <div>
                                                         <hr />
-                                                        <span class="tag-black">1등급 출현율 75%</span>
+                                                        <span class="tag-black">1등급 이상 출현율 75%</span>
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -2326,21 +2415,21 @@
                     
                     <div class="footer" id="report-7p">
                         <p>copyright ⓒ wiselake. All rights reserved.</p>
-                        <p>6p</p>
+                        <p>8p</p>
                     </div>
                 </div>
             </div>
-            <!-- 6페이지 끝 -->
+            <!-- 8페이지(4.출하 성적 진단) 끝 -->
 
 
 
-            <!-- 7페이지 시작 -->
+            <!-- 9페이지(5.총평) 시작 -->
             <div class="report-wrapper">
-                <div class="inner">
+                <div class="inner" id="report-9p">
                     <div class="container">
                         <div class="header">
                             <div class="main-tit-area">
-                                <h2>03 총평</h2>
+                                <h2>05 총평</h2>
                             </div>
                             <img src="images/logo_pigplan.svg">
                         </div>
@@ -2352,63 +2441,60 @@
                                     <h3>진단 총평</h3>
                                 </div>
                             </div>
-
-                            <div class="row-content mT10">
-                                <div style="width: 586px;">
-                                    <table class="basic-table">
-                                        <colgroup>
-                                            <col style="width: 122px;" />
-                                            <col />
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td class="tit">항목</td>
-                                                <td class="tit">진단 의견</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="tit">1. 번식 생산성</td>
-                                                <td class="textM">
-                                                    생산 성적은 우수한 편으로 현상 유지는 물론 비교적 취약한 부분에 더 신경을 등등 진단 의견이 들어갑니다.
-                                                    등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="tit">2. 농장 적정규모</td>
-                                                <td class="textM">
-                                                    농장 환경은 시설 규모에 비해 적절히 운영되고 있습니다. 하지만 자돈사의 밀사 문제가 다소 보입니다.
-                                                    등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="tit">3. 데이터 관리</td>
-                                                <td class="textM">
-                                                    타 농장들에 비해 데이터 관리를 중요시 하고 있는 것으로 보입니다.
-                                                    현장 관리 만큼 데이터 관리도 등등 진단 의견이 들어갑니다.
-                                                    등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="tit">4. 집중 관리</td>
-                                                <td class="textM">
-                                                    주간 집중 관리가 잘 되고 있는 것으로 보입니다.
-                                                    집중 관리 시스템을 잘 운영하면 성적 뿐만 아니라등등 진단 의견이 들어갑니다.
-                                                    등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="tit">5. 출하돈 품질</td>
-                                                <td class="textM">
-                                                    1등급 출현율 75%로 우수한 편에 속합니다.
-                                                    하지만 아직 개선 가능한 부분이 남아 있는 만큼 등등 진단 의견이 들어갑니다.
-                                                    등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div style="width: 320px;">
-                                    <div class="chart-area" style="height: 468px; background: #EFF0F2;">
-                                        <!-- 차트 영역 (차트 넣으면 위 div의 style 지워주세요. 감사합니다.)-->
-                                   </div>  
-                                </div>
+                            
+                            <div class="table-area mT10">
+                                <table class="basic-table">
+                                    <colgroup>
+                                        <col style="width: 122px;" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tit">항목</td>
+                                            <td class="tit">진단 의견</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">1. 번식 생산성</td>
+                                            <td class="textM">
+                                                생산 성적은 우수한 편으로 현상 유지는 물론 비교적 취약한 부분에 더 신경을 등등 진단 의견이 들어갑니다.
+                                                등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">2. 농장 적정규모</td>
+                                            <td class="textM">
+                                                농장 환경은 시설 규모에 비해 적절히 운영되고 있습니다. 하지만 자돈사의 밀사 문제가 다소 보입니다.
+                                                등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">3. 데이터 관리</td>
+                                            <td class="textM">
+                                                타 농장들에 비해 데이터 관리를 중요시 하고 있는 것으로 보입니다.
+                                                현장 관리 만큼 데이터 관리도 등등 진단 의견이 들어갑니다.
+                                                등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">4. 집중 관리</td>
+                                            <td class="textM">
+                                                주간 집중 관리가 잘 되고 있는 것으로 보입니다.
+                                                집중 관리 시스템을 잘 운영하면 성적 뿐만 아니라등등 진단 의견이 들어갑니다.
+                                                등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tit">5. 출하돈 품질</td>
+                                            <td class="textM">
+                                                1등급 출현율 75%로 우수한 편에 속합니다.
+                                                하지만 아직 개선 가능한 부분이 남아 있는 만큼 등등 진단 의견이 들어갑니다.
+                                                등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다. 등등 진단 의견이 들어갑니다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
+
+                            <div class="chart-area mT20" style="height: 468px; background: #EFF0F2;">
+                                <!-- 차트 영역 (차트 넣으면 위 div의 style 지워주세요. 감사합니다.)-->
+                            </div>  
                         </div>
                         <!-- 진단 총평 끝 -->
           
@@ -2416,11 +2502,11 @@
                     
                     <div class="footer">
                         <p>copyright ⓒ wiselake. All rights reserved.</p>
-                        <p>7p</p>
+                        <p>9p</p>
                     </div>
                 </div>
             </div>
-            <!-- 7페이지 끝 -->
+            <!-- 9페이지(5.총평) 끝 -->
         </div>
   </body>
 </html>
