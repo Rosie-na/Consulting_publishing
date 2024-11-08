@@ -107,8 +107,26 @@ button:focus {
     vertical-align: middle;
     margin-right: 5px;
 }
+.btn-setting::before {
+    content: url("../images/icon/settings.svg");
+    vertical-align: middle;
+    margin-right: 5px;
+}
 .btn-pdf:hover, .btn-print:hover {
     background-color: var(--blue-400);
+}
+.btn-setting {
+    background-color: var(--bg-white);
+    border: 1px solid var(--gray-300);
+    color: var(--gray-500);
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+	min-width: 50px;
+    height: 32px;
+}
+.btn-setting:hover {
+    border: 1px solid #1D9ADD;
 }
 .btn-gray {
     background-color: var(--bg-white);
@@ -122,7 +140,6 @@ button:focus {
 }
 .btn-gray:hover {
     border: 1px solid #1D9ADD;
-    color: #1D9ADD;
 }
 .btn-white {
     background-color: var(--bg-white);

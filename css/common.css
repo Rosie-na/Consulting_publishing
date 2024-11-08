@@ -694,6 +694,73 @@ header .gnb-wrapper .btns-area .btns{
 }
 
 
+/* 기본 정보 수정 페이지 */
+.content-wrapper {
+    padding-bottom: 30px;
+}
+.content-wrapper .inner {
+    position: relative;
+    width: 750px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #DEE2E6;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper .inner .head-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 24px 0px 24px;
+}
+.content-wrapper .inner .head-wrapper .tit{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.44px;
+}
+.content-wrapper .inner .body-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+.content-wrapper .inner .body-wrapper .cont-area{
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #D6D6D6;
+    background: #F2F2F2;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.content-wrapper .inner .body-wrapper .cont-area .tit{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+}
+.content-wrapper .inner .body-wrapper .cont-area .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 14px;
+}
+.content-wrapper .inner .body-wrapper .cont-area .row input {
+    width: 122px;
+}
+.content-wrapper .inner .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap : 12px;
+    padding: 0px 24px 24px 24px;
+}
+
+
+
 /* 기본 정보 입력 팝업 */
 .modal-bg {
     display: block;
